@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>This iS Likes PAGE</h1>
+  <% for (let i=0; i < quotes.length; i++) {%>
+  <% if(quotes[i].likes > (likes - 30)){%>
+    <%= quotes[i].quote %> <br>
+    <a href="#" id="<%= quotes[i].authorId %>"> 
+    <%= quotes[i].firstName %>
+    <%= quotes[i].lastName %>
+    </a> <h4>Likes: <%= quotes[i].likes%></h4>
+    <br><br>
+      <%}%>
+  <%}%>
+
+</body>
+</html>
